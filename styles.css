@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(177, 232, 217);
+  }
+  
+  .background {
+    background-image: url('https://www.wallpapers13.com/wp-content/uploads/2015/12/My_heart-wallpape-2560x1600-730x456.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .letter {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    transform: perspective(500px) rotateX(20deg); 
+  }
+
+  .header {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .interactive {
+    text-align: center;
+  }
+  .interactive .questionButton[data-effect="heart"]:after {
+    content: "❤️"; /* Heart icon */
+    display: inline-block;
+    margin-left: 5px;
+    animation: heartbeat 1s ease infinite;
+  }
+  
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .questionButton {
+    margin: 10px;
+  }
+  
+  .message {
+    line-height: 1.6;
+  }
+  
